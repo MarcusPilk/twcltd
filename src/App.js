@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigation from './Components/Navigation';
+import logo from './logo.svg';
 import AnimatedEllipsis from 'react-animated-ellipsis';
-import {Button} from "react-bootstrap";
+import {Button, ProgressBar} from "react-bootstrap";
 
 
 class App extends Component {
@@ -34,6 +35,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+
+
                 {this.state.hide?
                 <Button onClick={this.handleComponentHide}>Open</Button>
                     :null}

@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  /*background-color: #282c34;*/
+  background-color: #282c34;
   min-height: 100vh;
   /*display: flex;*/
   flex-direction: column;
@@ -8,8 +8,32 @@
   color: white;
 }
 
+/* Inactive tab */
+.Tab ul > li > a {
+  background-color: #282c34;
+  color: white;
+}
+.Tab ul > li > a:hover {
+  background-color: gray;
+}
+
+/* Active tab */
+.Tab ul > li.active > a,
+.Tab ul > li.active > a:hover,
+.Tab ul > li.active > a:focus {
+  background-color: darkgray;
+  color: black;
+}
+
+/* Disabled tab */
+.Tab ul > li.disabled > a {
+  background-color: lightgray;
+  color: darkgray;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
+  /*animation: running infinite 20s linear;*/
   height: 40vmin;
 }
 

@@ -34,6 +34,7 @@ class Navigation extends Component {
                     activeKey={this.state.key}
                     onSelect={this.handleSelect}
                     id="controlled-tab"
+                    className={"Tab"}
                 >
                     <Tab eventKey={1} title="Education">
                         <Education/>

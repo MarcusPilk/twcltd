@@ -6,7 +6,7 @@ class Professional extends Component {
     render() {
         return (
             <div>
-                This is a component about my <em>Professional</em> Experience.
+                This is a component about my <b>Professional</b> Experience.
             </div>
         )
     }
